@@ -1,3 +1,4 @@
+
 .bio {
     background-color: #7aa1f0;
     padding: 10px;
@@ -17,5 +18,9 @@
     min-height: 75px;
     display: inline-block;
     padding: .5em;
+
+
+h1 {
+    text-align: center;
 
 }
