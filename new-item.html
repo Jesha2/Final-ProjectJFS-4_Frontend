@@ -68,32 +68,45 @@
               <div class="form-group">
                 <label for="picture">Picture</label>
                 <select class="form-control" id="picture">
-                  <option ><img src="/resources/Images/images"/></option>
+                  <option><img src="/resources/Images/images"/></option>
                   <option><img src="/resources/Images/Image2.jpeg" alt="Product Image"/></option>
                   <option><img src="/resources/Images/your-logo.png" alt="Product Image"/></option>
                 </select>
               </div> 
             -->
+            <!--
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          -->
               <br>
             <div class="form-group">
               <label for="size">Size</label>
               <select class="form-control" id="size">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option>--</option>
+                <option>XS</option>
+                <option>SM</option>
+                <option>MD</option>
+                <option>LG</option>
+                <option>XL</option>
               </select>
             </div>
             <br>
             <div class="form-group">
                 <label for="price">Price </label>
-                <input type="number" class="form-control" id="price" placeholder="$">
+                <input type="number" class="form-control" id="price" placeholder="$" min="0">
               </div>
               <br>
               <div class="form-group">
                 <label for="stock">Items in stock</label>
-                <input type="number" class="form-control" id="stock">
+                <input type="number" class="form-control" id="stock" min="1">
               </div>
             
             
