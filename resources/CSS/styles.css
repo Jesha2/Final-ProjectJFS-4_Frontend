@@ -2,3 +2,7 @@ h1 {
     text-align: center;
 
 }
+
+#Clothing {
+    text-shadow: -3px 1px 1px rgba(139,139,139,0.95);
+}
