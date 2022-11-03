@@ -1,5 +1,10 @@
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F9F6EE;
+}
+
+.Content {
+    margin: 50px;
 }
 
 h1, h2 {
