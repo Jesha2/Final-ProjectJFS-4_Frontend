@@ -1,3 +1,5 @@
+
+
 let newProduct = new ProductController(0);
 
 function addProduct(e){
@@ -15,5 +17,6 @@ function addProduct(e){
 let btn = document.getElementById('btn');
 btn.onclick = addProduct;
 
+// export default newProduct
 
 

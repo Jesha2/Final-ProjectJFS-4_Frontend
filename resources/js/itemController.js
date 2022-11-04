@@ -26,5 +26,16 @@ class ProductController {
         console.log(this.items);
     }
 
+    loadItemsFromLocalStorage() {
+        const storageItems = localStorage.getItem("items")
+        if (storageItems) {
+            const items = JSON.parse(storageItems)
+            for (var i = 0, size = items.length; i < size; i++) {
+                const item = items[i];
+                this.items.push(item);
+            }
+        }
+    }
+
 }
 
