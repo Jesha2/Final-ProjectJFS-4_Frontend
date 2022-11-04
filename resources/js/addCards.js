@@ -1,6 +1,6 @@
 // import newProduct from './index.js';
 
-function addItemCard() {
+function addItemCard(item) {
     const itemHTML = 
     '<div class="row row-cols-1 row-cols-md-3 g-4">\n'+
     '<div class="col">\n' +

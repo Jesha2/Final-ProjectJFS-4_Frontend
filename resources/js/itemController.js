@@ -28,6 +28,7 @@ class ProductController {
 
     loadItemsFromLocalStorage() {
         const storageItems = localStorage.getItem("items")
+        console.log(storageItems)
         if (storageItems) {
             const items = JSON.parse(storageItems)
             for (var i = 0, size = items.length; i < size; i++) {

@@ -17,6 +17,28 @@ function addProduct(e){
 let btn = document.getElementById('btn');
 btn.onclick = addProduct;
 
+function loadStorageSampleData(){
+    if(!localStorage.getItem("items")){
+        const sampleItems = [{'name':'T-shirt',
+        'img':'https://www.gs1india.org/media/Juice_pack.jpg',
+        'description':'tshirt for kids', 'price': '55', 'size': 'LG'},
+        {'name':'T-shirt',
+        'img':'https://www.gs1india.org/media/Juice_pack.jpg',
+        'description':'tshirt for kids', 'price': '55', 'size': 'LG'}];
+        localStorage.setItem("items", JSON.stringify(sampleItems));
+    }
+}
+
+function loadCardsListFromItemsController(){
+    for(var i = 0, size = newProduct.items.length; i < size ; i++){
+        const item = newProduct.items[i];
+        addItemCard(item);
+    }
+}
+
+loadStorageSampleData();
+newProduct.loadItemsFromLocalStorage();
+loadCardsListFromItemsController();
 // export default newProduct
 
 
