@@ -19,13 +19,14 @@ class ProductController {
             size :size,
             quantity : quantity
         }
-        console.log("*******Adding this item");
-        console.log(item);
+
         this.items.push(item);
         console.log("***************All the product added" );
         console.log(this.items);
+        console.log(item);
+        localStorage.setItem("items", JSON.stringify(this.items));
+        // localStorage.setItem("items", JSON.stringify(this.item));
     }
-
     loadItemsFromLocalStorage() {
         const storageItems = localStorage.getItem("items")
         console.log(storageItems)
@@ -37,6 +38,6 @@ class ProductController {
             }
         }
     }
-
 }
+
 
