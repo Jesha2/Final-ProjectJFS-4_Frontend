@@ -2,7 +2,6 @@ let newProduct = new ProductController(0);
 
 function addItemCard(item) {
     const itemHTML = 
-
     '<div class="row row-cols-1 row-cols-md-3 g-4">\n'+
     '<div class="col">\n' +
     '  <div class="card h-100">\n'+
