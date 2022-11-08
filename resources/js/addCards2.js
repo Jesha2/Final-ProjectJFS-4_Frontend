@@ -17,14 +17,14 @@ function addItemCard(item) {
       '</div>\n'+
     '</div>\n'+
     '<br></br>\n';
-    const itemsContainer = document.getElementById("kids-list");
+    const itemsContainer = document.getElementById("Men-list");
     console.log(itemsContainer.innerHTML);
     itemsContainer.innerHTML += itemHTML;
     console.log('codeAdded');
     console.log(itemsContainer.innerHTML);
     
 }
-pageCat = "Kids";
+pageCat = "Men";
 function loadStorageSampleData(){
     if(!localStorage.getItem(pageCat)){
         const sampleItems = [{'name':'T-shirt',
