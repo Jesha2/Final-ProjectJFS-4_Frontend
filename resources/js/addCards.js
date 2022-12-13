@@ -5,7 +5,7 @@ function addItemCard(item) {
     '<div class="row row-cols-1 row-cols-md-3 g-4">\n'+
     '<div class="col">\n' +
     '  <div class="card h-100">\n'+
-       ' <img src="'+item.img +'" class="card-img-top" alt="..." id="img">\n'+
+       ' <img src="'+item.imageUrl +'" class="card-img-top" alt="..." id="img">\n'+
         '<div class="card-body">\n'+
           '<h5 class="card-title" id="name">'+item.name +'</h5>\n'+
           '<p class="card-text" id="description">'+item.description +'</p>\n'+
@@ -44,6 +44,7 @@ function loadCardsListFromItemsController(){
     }
 }
 
-loadStorageSampleData();
-newProduct.loadItemsFromLocalStorage(pageCat);
-loadCardsListFromItemsController();
+newProduct.getDataFromDatabase();// downloading data from database to local storage
+loadStorageSampleData();// Creating 2 data entry if the localstorage is empty i.e no data in DB
+newProduct.loadItemsFromLocalStorage(pageCat);// Selecting from  the local storage based on category-pageCat 
+loadCardsListFromItemsController();//creating HTML Tags for the cards

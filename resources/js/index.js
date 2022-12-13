@@ -11,6 +11,8 @@ function addProduct(e){
 
     console.log(img.value)
     newProduct.addItem(category.value,name.value,description.value,img.value,price.value,size.value,quantity.value);
+    newProduct.saveItem(category.value,name.value,description.value,img.value,price.value,size.value,quantity.value);
+    newProduct.getDataFromDatabase();
     e.preventDefault(); 
     // Clear the form on the product page after onclick
     category.value = '';
