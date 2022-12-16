@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciaovitta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="/resources/CSS/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/resources/Images/Company-Disp-Images/ci vitta (1).png" alt="Ciaovitta Logo" width="30"
+                        height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/new-item.html">Add Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Update-item.html">Update Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Delete-item.html">Delete Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login.html">List of Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- ADDING A PRODUCT-->
+        <header>
+            <h1>Update a product</h1>
+        </header>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="name">Id</label>
+                    <input type="text" class="form-control" id="id" placeholder="Product Name">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category </label>
+                    <!-- <input type="text" class="form-control" id="category" placeholder="category Name"> -->
+                    <select class="form-control" id="category">
+                        <option>--</option>
+                        <option>Kids</option>
+                        <option>Women</option>
+                        <option>Men</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="name">Product Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Product Name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="description">Detailed description about the product</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+                <br>
+
+
+
+                <!-- <div class="form-group">
+                <label for="product_image">Product image</label>
+              <input class="form-control" type="file" name="image" accept="image/gif, image/jpeg, image/png">
+              <img id="blah" src="#" alt="your image" />
+              </div>
+              <input type="file" />
+                <img id="blah" src="#" alt="your image" />
+            -->
+                <div class="form-group">
+                    <label for="product_image">Product image</label>
+                    <!--<img class="form-control" id="img" src="./resources/Images/Kids/cn50502091.webp" alt="Product Image"/> -->
+                    <!-- <input class="form-control" type="file" id="img"> -->
+                    <input type="text" class="form-control" id="img" placeholder="Product Name">
+                </div>
+                <!--
+              <div class="form-group">
+                <label for="picture">Picture</label>
+                <select class="form-control" id="picture">
+                  <option><img src="/resources/Images/images"/></option>
+                  <option><img src="/resources/Images/Image2.jpeg" alt="Product Image"/></option>
+                  <option><img src="/resources/Images/your-logo.png" alt="Product Image"/></option>
+                </select>
+              </div> 
+            -->
+                <!--
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          -->
+                <br>
+                <div class="form-group">
+                    <label for="size">Size</label>
+                    <select class="form-control" id="size">
+                        <option>--</option>
+                        <option>XS</option>
+                        <option>SM</option>
+                        <option>MD</option>
+                        <option>LG</option>
+                        <option>XL</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="price">Price </label>
+                    <input type="number" class="form-control" id="price" placeholder="$" min="0">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="quantity">Items in stock</label>
+                    <input type="number" class="form-control" id="quantity">
+                </div>
+
+
+                <br>
+                <div class="text-center">
+                    <button id='btn' type="submit" class="btn btn-secondary">Update the Product</button>
+                </div>
+            </form>
+        </div> <!-- container -->
+
+    </main>
+    <script src="./resources/js/itemController.js"></script>
+    <script src="./resources/js/UpdateItem.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
